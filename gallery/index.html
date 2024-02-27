@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sliding Gallery</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <div class="header">
+        <h1>Art Gallery Showcase</h1>
+        <h2>A Jquery image Gallery with a Thumbnail Carousel</h2>
+    </div>
+    <br />
+    <div class="gallery">
+        <div class="buttons">
+            <button type="button" id="showthumbBtn" onclick="displayThumbnail()">
+                <img src="images/gallery-thumbnails.png" alt="" />
+            </button>
+            <button type="button" id="hidethumbBtn" onclick="removeThumbnail()">
+                <img src="images/remove.png" alt="" />
+            </button>
+        </div>
+
+        <div class="thumbnails" id="thumbnailContainer">
+            <div class="thumbnailImages">
+            </div>
+        </div>
+
+        <div class="fullImage">
+            <div class="loadingIcon"></div>
+            <button class="prevBtn" onclick="previmg()">&#10094;</button>
+            <img src="images/pictures/1.jpg" alt="Full-size Image" id="fullImage" />
+            <button class="nextBtn" onclick="nextimg()">&#10095;</button>
+        </div>
+
+        <div id="captionText">"Green Valley with Majestic Mountain Views"</div>
+    </div>
+    <br />
+    <br />
+
+    <div class="footer">&copy; Copyright Reserved by Art Gallery Showcase</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
